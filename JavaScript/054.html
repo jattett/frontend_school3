@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+       .blue {
+      background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="myDiv">div 입니다</div>
+    <div class="myDiv">div 입니다</div>
+    <div class="myDiv">div 입니다</div>
+    <div class="myDiv">div 입니다</div>
+    <div class="myDiv">div 입니다</div> -->
+
+    점심 식단
+    <article id="container">
+        <ul>
+            <li>탕수육</li>
+            <li class="item-second">유산슬</li>
+            <li>짜장면</li>
+        </ul>
+    </article>
+
+    저녁 식단
+    <article>
+        <ul>
+            <li>된장국</li>
+            <li class="item-second">김치찌게</li>
+            <li>해장국</li>
+        </ul>
+    </article>
+
+    <button>HELLO!</button>
+    <button class="blue">Make me BLUE!</button>
+    
+    <script>
+
+        // console.log(document.getElementsByClassName('item-second')[0]);
+
+        // console.log(document.getElementsByTagName('li')[0])
+        // // id로 접근 하는 방법
+        // console.log(document.getElementById('myDiv'));
+        // // 찾아서 저장하고 사용한다.
+        // const myDiv = document.getElementById('myDiv');
+
+        // 요소로 접근하기
+        // console.log(document.getElementsByTagName('div'));
+
+        // //태그로 접근하기
+        // console.log(document.getElementsByClassName('myDiv'));
+
+        // const container = document.getElementById("cotainer")
+
+        // console.log(document.getElementsByClassName('item-second')[0]);
+
+        // console.log(document.getElementsByTagName('li')[0])
+
+        // //유사배열 객체
+        // const obj = {
+        //     0: "value",
+        //     1: "value",
+        //     2: "value",
+        //     3: "value",
+        //     4: "value"
+        // }
+    const myBtn = document.querySelector("button");
+
+    myBtn.addEventListener('click', function(){
+        myBtn.classList.contains('blue');
+    })
+// blue 라는 클래스의 속성 값을 지정 할 수 있습니다.
+	// myBtn.classList.add("blue");
+	// myBtn.classList.remove(“blue”);     클래스를 제거합니다.    
+    // 클래스를 토글합니다. 없으면 넣어주고, 있으면 제거합니다.
+	// myBtn.classList.contains(“blue”);   해당하는 클래스가 있는지 확인합니다.
+    </script>
+    
+</body>
+</html>
